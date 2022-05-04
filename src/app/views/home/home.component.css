@@ -1,34 +1,37 @@
-.homeVideo{
-    width: 100vw;
-    height: 100vh;
+.homeVideo {
+  width: 100vw;
+  height: 100vh;
 }
 
-.btnFather{
-    bottom:-25px;
-    padding:3px 35px;
+.btnFather {
+  bottom: -25px;
+  padding: 3px 35px;
 
 }
 
-.registerBTN{
-    position:absolute;
-    left:-80px;
-    padding:3px 35px;
-    z-index:2;
+.registerBTN {
+  position: absolute;
+  left: -80px;
+  padding: 3px 35px;
+  z-index: 2;
+}
+.registerBTN:focus {
+    outline: none !important;
 }
 
-.btnChild{
-    position: relative;
-top:115px;
+.btnChild {
+  position: relative;
+  top: 115px;
 }
 
-.borderBTN{
-    position:absolute;
-    padding:3px 39px;
-    left:-84px;
-    top:5px;
-    background-color: transparent;
-    border:1px solid #fff;
-    color:transparent;
-    border-radius: 0.25rem;
-    z-index:1;
+.borderBTN {
+  position: absolute;
+  padding: 3px 39px;
+  left: -84px;
+  top: 5px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: transparent;
+  border-radius: 0.25rem;
+  z-index: 1;
 }
