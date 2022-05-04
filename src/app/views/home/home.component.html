@@ -1,15 +1,19 @@
-<div class="container w-100">
-  <div class="d-flex flex-column justify-content-center align-items-center">
-    <!--div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div-->
-    <video src="../../assets/INTRO-MOVIL.mp4" autoplay="true" muted class="homeVideo"  type="video/mp4" >
+<div>
+
+    <!-- MOBILE VIDEO -->
+    <video class="video-mobile" width="100%" autoplay="true" preload="auto" loop muted>
+      <source src="../../assets/INTRO-MOVIL.mp4" type="video/mp4"/>
     </video>
-    <div class="position-absolute btnFather">
-      <div class="btnChild">
-        <button class="btn btn-primary registerBTN fw-bold">Regístrate</button>
-        <div class="borderBTN">Registrate</div>
-      </div>
+
+    <!-- DESKTOP VIDEO -->
+    <video class="video-desktop" width="100%" autoplay="true" preload="auto" loop muted>
+      <source src="../../assets/video-desktop.mp4" type="video/mp4"/>
+    </video>
+
+    <!-- BUTTON REGISTER -->
+    <div class="btn-container">
+      <button class="btn btn-home-register">Regístrate</button>
+      <div class="btn-border"></div>
     </div>
-  </div>
+
 </div>
