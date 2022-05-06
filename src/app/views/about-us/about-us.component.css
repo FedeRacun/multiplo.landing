@@ -1,9 +1,73 @@
 
+    /* background-image: url(../../../assets/landing/marca_agua1.png); */
 
-.marca-de-agua {
-    width: 100%;
-    height: 100px;
-    background-image: url("../../../assets/landing/marca_agua1.png");
+.circle-background {
+    background-image: url('../../../assets/landing/marca_agua1.png');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -7vw;
+    height: calc(112vw);
+    left: -24px;
+    position: absolute;
+    width: 201%;
+    z-index: -1;
+}
+
+.about-us-container {
+    height: 86vw;
+    overflow: hidden;
     position: relative;
+    top: -35px;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 10vw;
+    justify-content: end;
+}
+
+.title-about-us {
+    background-image: url('../../../assets/landing/separador1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 61%;
+    position: absolute;
+    height: 7vw;
+    padding-bottom: 1vw;
+}
+
+.title-about-us .title{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-video {
+    position: absolute;
+    top: 25vw;
+}
+
+
+@media (min-width: 800px) {
+    .circle-background {
+        height: calc(41vw);
+        bottom: 60vw;
+        left: 176px;
+        position: absolute;
+        width: 121%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-about-us {
+        width: 75vw;
+        height: 10vw;
+    }
 }

@@ -12,11 +12,11 @@
 .image-separator {
   position: absolute;
   width: 100%;
+  height: calc(18vw);
   bottom: calc(-5vw);
-}
-
-.image-separator img{
-  object-fit: cover;
+  background-image: url('../../../assets/landing/pie_video.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-container {
