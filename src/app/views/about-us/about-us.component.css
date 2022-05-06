@@ -1,0 +1,9 @@
+
+
+.marca-de-agua {
+    width: 100%;
+    height: 100px;
+    background-image: url("../../../assets/landing/marca_agua1.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
