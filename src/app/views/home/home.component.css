@@ -14,7 +14,7 @@
   width: 100%;
   height: calc(18vw);
   bottom: calc(-5vw);
-  background-image: url('../../../assets/landing/pie_video.svg');
+  background-image: url('../../../assets/landing/video-separator.svg');
   background-repeat: no-repeat;
   background-position: center;
 }

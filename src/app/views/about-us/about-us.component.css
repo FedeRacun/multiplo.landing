@@ -1,8 +1,168 @@
+.about-us-section {
+  margin-top: 6vw;
+  overflow: hidden;
+}
 
-    /* background-image: url(../../../assets/landing/marca_agua1.png); */
+.title-container {
+  position: relative;
+  min-height: 14vw;
+}
+
+.title-background {
+  width: 100%;
+  max-width: 800px;
+  min-height: 49px;
+  position: absolute;
+  right: -137px;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  top: 1.2vw;
+  right: 10vw;
+}
 
 .circle-background {
-    background-image: url('../../../assets/landing/marca_agua1.png');
+    background-image: url('../../../assets/landing/backgroud-top.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -60vw;
+    height: calc(112vw);
+    left: -24px;
+    position: absolute;
+    width: 201%;
+    z-index: -1;
+}
+
+
+
+/* VIDEO */
+.video-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.video-container {
+  max-width: 900px;
+  width: 90%;
+}
+
+.multiplo-logo {
+  width: 500px;
+}
+
+
+.title-2-container {
+  margin-top: 2vw;
+  position: relative;
+
+}
+
+.title-2-background {
+  transform: rotate(180deg);
+  width: 80%;
+  max-width: 800px;
+  min-height: 130px;
+}
+
+.title-2 {
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.span-container {
+  position: absolute;
+  color: white;
+  top: 25px;
+  right: 40vw;
+}
+
+.subtitle-container {
+  position: absolute;
+  top: 77px;
+  right: 32vw;
+  text-align: center;
+}
+
+
+@media (max-width: 480px) {
+  .title-background {
+    min-height: 30px;
+  }
+
+  .title {
+    right: 3vw;
+    font-size: 5vw;
+  }
+
+  .multiplo-logo {
+    width: 80vw;
+  }
+
+  .span-container {
+      font-size: 12px;
+
+  }
+  .subtitle-container {
+    font-size: 12px;
+  }
+}
+
+/* DESKTOP RESPONONSIVE */
+@media (min-width: 1100px) {
+  .title-container {
+    min-height: 10vw;
+  }
+
+  .title-2-container {
+    min-height: 10vw;
+  }
+
+  .title-background {
+    min-width: 60vw;
+  }
+
+  .title-2-background {
+    min-height: 15vw;
+    max-width: 1270px;
+  }
+
+  .title {
+    top: 0.5vw;
+    right: 15vw;
+    font-size: 3vw;
+  }
+
+  .video-container {
+    width: 50%;
+  }
+
+  .span-container {
+    top: 2.5vw;
+    left: 28vw;
+    font-size: 2.2vw;
+  }
+
+  .subtitle-container {
+    top: 9.5vw;
+    left: 18vw;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+}
+
+/*
+
+.circle-background {
+    background-image: url('../../../assets/landing/backgroud-top.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +187,7 @@
     width: 100%;
     position: absolute;
     top: 10vw;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .title-about-us {
@@ -49,9 +209,16 @@
     justify-content: center;
 }
 
-.logo-video {
-    position: absolute;
-    top: 25vw;
+.video-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    max-width: 900px;
+    width: 90%;
 }
 
 
@@ -71,3 +238,5 @@
         height: 10vw;
     }
 }
+
+*/
