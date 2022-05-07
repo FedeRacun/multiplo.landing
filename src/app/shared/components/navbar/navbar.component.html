@@ -1,0 +1,29 @@
+<nav class="nav-element">
+  <!-- LOGO -->
+  <a class="logo-container" href="#">
+    <img src="../../../../assets/images/iconos/logo-multiplo.png" class="logo-img">
+  </a>
+
+  <!-- Mobile Menu -->
+  <div class="dot-menu" (click)="onClickMenu(showMenu = !showMenu)">
+    <ul class="sections-container" id="menuMobile">
+            <li>Inicio</li>
+            <li>Quienes somos</li>
+            <li>Invierte</li>
+            <li>Solicitar financiamiento</li>
+            <li>Iniciar Sesion</li>
+            <li class="btn btn-warning">Registrate</li>
+        </ul>
+
+  </div>
+
+  <ul class="navbar-desktop" id="menuDesktop">
+    <li>Inicio</li>
+    <a href="#aboutUs" style="text-decoration: none; color: white;">Quienes somos</a>
+    <li>Invierte</li>
+    <li>Solicitar financiamiento</li>
+    <li>Iniciar Sesion</li>
+    <li style="background-color: orange; border-radius: 5px;">Registrate</li>
+</ul>
+
+</nav>

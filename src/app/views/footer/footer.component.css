@@ -1,0 +1,22 @@
+.firstFooter{
+    background-color: #004889;
+}
+
+.footerLogo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+}
+
+.footerLogoText{
+    top: 50px;
+    position: absolute;
+    font-size: 0.5rem;
+}
+
+.firstLinksFooter{
+    display: flex;
+    justify-content: space-between;
+}
