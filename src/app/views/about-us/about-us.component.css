@@ -50,7 +50,6 @@
 }
 
 .title-2-background {
-  transform: rotate(180deg);
   width: 80%;
   max-width: 800px;
   min-height: 130px;
@@ -76,7 +75,7 @@
 
 .subtitle-2-container {
   position: absolute;
-  top: 77px;
+  top: 80px;
   left: 0;
   text-align: center;
   width: 70%;
@@ -125,7 +124,6 @@
   width: 65vw;
 }
 
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -142,6 +140,12 @@
   z-index: 10;
   font-family: 'Gill Sans MT';
   letter-spacing: 0.1rem;
+}
+
+
+.btn-steps-invierte:hover {
+  background-color: #223262;
+  cursor: pointer;
 }
 
 .btn-border {
@@ -191,7 +195,7 @@
 
   }
   .subtitle-2-container {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .number {

@@ -38,6 +38,12 @@
   position: relative;
 }
 
+
+.btn-home-register:hover {
+  background-color: #223262;
+  cursor: pointer;
+}
+
 .btn-border {
   background-color: transparent;
   border: 1px solid #ffffff;
