@@ -3,3 +3,64 @@
     font-family: lato;
     src: url(assets/fuente/GillansMT.TTF) format("opentype");
   }
+
+  .bg-color-primary-500 {
+    background-color: #223262;
+  }
+
+  .bg-color-primary-400 {
+    background-color: #004889;
+  }
+
+  .bg-color-primary-300 {
+    background-color: #0460A7;
+  }
+
+  .bg-color-primary-200 {
+    background-color: #3176BA;
+  }
+
+  .bg-color-primary-100 {
+    background-color: #0CAAE3;
+  }
+
+
+  .bg-color-secondary-500 {
+    background-color: #E33823;
+  }
+
+  .bg-color-secondary-400 {
+    background-color: #EA6126;
+  }
+
+  .bg-color-secondary-300 {
+    background-color: #E06222;
+  }
+
+  .bg-color-secondary-200 {
+    background-color: #EF8448;
+  }
+
+  .bg-color-secondary-100 {
+    background-color: #F2A348;
+  }
+
+  .text-primary-500 {
+    color: #223262;
+  }
+
+  .text-primary-400 {
+    color: #004889;
+  }
+
+  .text-primary-300 {
+    color: #0460A7;
+  }
+
+  .text-primary-200 {
+    color: #3176BA;
+  }
+
+  .text-primary-100 {
+    color: #0CAAE3;
+  }
