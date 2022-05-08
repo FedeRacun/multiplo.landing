@@ -97,6 +97,23 @@
   }
 }
 */
+
+
+
+.contactos {
+  margin-top: 5rem;
+}
+
+.social-media-icon{
+  width:8vw;
+  max-width: 40px;
+}
+
+.email {
+  font-size: 16px;
+}
+
+
 /* Responsive Mobile */
 @media (max-width: 480px) {
 
@@ -184,9 +201,18 @@
     margin-bottom: 5px;
   }
 
+
+  .contactos {
+    margin-top: 2rem;
+  }
+
+  .email {
+    font-size: 2vw;
+  }
 }
-.social-media-icon{
-  width:8vw;
-  max-width: 40px;
+
+@media (max-width: 1000px) {
+  .contactos {
+    margin-top: 2rem;
+  }
 }
-  
