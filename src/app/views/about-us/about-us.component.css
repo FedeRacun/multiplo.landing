@@ -1,5 +1,5 @@
 .about-us-section {
-  margin-top: 6vw;
+  padding-top: 6vw;
   overflow: hidden;
 }
 
@@ -23,21 +23,6 @@
   right: 10vw;
 }
 
-.circle-background {
-    background-image: url('../../../assets/landing/backgroud-top.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -60vw;
-    height: calc(112vw);
-    left: -24px;
-    position: absolute;
-    width: 201%;
-    z-index: -1;
-}
-
-
-
 /* VIDEO */
 .video-logo-container {
   width: 100%;
@@ -56,6 +41,7 @@
   width: 500px;
 }
 
+/* TITLE 2 */
 
 .title-2-container {
   margin-top: 2vw;
@@ -78,21 +64,114 @@
   font-size: 3rem;
 }
 
-.span-container {
+.span-container-title-2 {
   position: absolute;
   color: white;
   top: 25px;
-  right: 40vw;
+  left: 0;
+  width: 50%;
+  min-width: 186px;
+  text-align: end;
 }
 
-.subtitle-container {
+.subtitle-2-container {
   position: absolute;
   top: 77px;
-  right: 32vw;
+  left: 0;
   text-align: center;
+  width: 70%;
+  min-width: 230px;
+}
+
+/* STEPS CONTAINER */
+.steps-container {
+    margin: 2rem 0 2rem 0;
+}
+
+.steps-group {
+  width: 90%;
+  margin: auto;
+}
+.step {
+  width: 100%;
+  position: relative;
+}
+.step img{
+  width: 100%;
+  max-width: 700px;
+}
+
+.number {
+  position: absolute;
+  top: 2vw;
+  left: 9vw;
+  font-size: 10vw;
+}
+
+.title-step {
+  position: absolute;
+  top: 4vw;
+  left: 22vw;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.description-step {
+  position: absolute;
+  top: 8vw;
+  left: 22vw;
+  font-size: 2.5vw;
+  font-weight: 500;
+  width: 65vw;
 }
 
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;position: relative;
+}
+
+.btn-steps-invierte {
+  color: white;
+  background-color: #004889;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.3rem 2.5rem;
+  z-index: 10;
+  font-family: 'Gill Sans MT';
+  letter-spacing: 0.1rem;
+}
+
+.btn-border {
+  background-color: transparent;
+  border: 1px solid #000000;
+  position: absolute;
+  width: 141px;
+  height: 35px;
+  top: 4px;
+  border-radius: 3px;
+  left: calc(50% - 4px);
+  transform: translate(-50%,0);
+}
+
+
+
+.image-group-container {
+  position: relative;
+  display: none;
+}
+
+.image-group-container img {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  z-index: -1;
+  width: 67rem;
+}
+
+/* MOBILE RESPONONSIVE */
 @media (max-width: 480px) {
   .title-background {
     min-height: 30px;
@@ -107,12 +186,21 @@
     width: 80vw;
   }
 
-  .span-container {
+  .span-container-title-2 {
       font-size: 12px;
 
   }
-  .subtitle-container {
+  .subtitle-2-container {
     font-size: 12px;
+  }
+
+  .number {
+    top: 3vw;
+    left: 9vw;
+  }
+  .title-step {
+    top: 4vw;
+    left: 22vw;
   }
 }
 
@@ -145,22 +233,52 @@
     width: 50%;
   }
 
-  .span-container {
+  .span-container-title-2 {
     top: 2.5vw;
-    left: 28vw;
+    left: 0;
     font-size: 2.2vw;
+    width: 50%;
+    max-width: 1000px;
+    text-align: end;
   }
 
-  .subtitle-container {
+  .subtitle-2-container {
     top: 9.5vw;
-    left: 18vw;
+    left: 0;
     text-align: center;
     font-size: 1.5vw;
+    width: 70%;
+    max-width: 1430px;
+  }
+
+  .image-group-container {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  .number {
+    top: 12px;
+    left: 70px;
+    font-size: 82px;
+  }
+
+  .title-step {
+    top: 25px;
+    left: 163px;
+    font-size: 25px;
+  }
+
+  .description-step {
+    top: 58px;
+    left: 163px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 500px;
   }
 }
 
 /*
-
 .circle-background {
     background-image: url('../../../assets/landing/backgroud-top.png');
     background-position: center;
