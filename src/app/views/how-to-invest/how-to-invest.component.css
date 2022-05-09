@@ -1,0 +1,206 @@
+.howToInvestFather{
+    width: 100vw;
+}
+@media (max-width:480px){
+    .calculateYourProfit{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    .multiploPerformance{
+        background-color: #f5f5f5;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 50%;
+        box-shadow: 4px 5px 10px #ccc;
+    }
+    .savingPerformance{
+        background-color: #f5f5f5;
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 4px 5px 10px #ccc;
+    }
+    .square{
+        padding: 20px 10px;
+        border-radius: 5px;
+        border-color: linear-gradient(to right, #0caae3 0%,#004889 100%);
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: 4px 5px 10px #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .multiploLogo{
+        width: 15vw;
+    }
+    .savingLogo{
+        width: 5vw;
+    }
+
+    .savingTitle{
+        display: flex;
+        align-items: center;
+    }
+
+    .performanceItem{
+        margin:10px 0 ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 0.4rem;
+        font-weight: 700;
+    }
+
+    .amountBoxUp{
+        padding: 5px 20px;
+        width: 13vw;
+        margin-left: 5px;
+       box-shadow: 0px 0px 5px #ccc;
+       border-radius: 15px 15px 0px 0px;
+       text-align: center;
+    }
+    .amountBoxDown{
+        text-align: center;
+        padding: 5px 20px;
+        width: 13vw;
+        margin-left: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .totalBox{
+        font-size: 0.7rem;
+        padding: 2px 10px;
+        width: 25vw;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    .calculateYourGain{
+        display: none;
+    }
+
+    .interes{
+        margin-left: 20px;
+    }
+
+}
+@media (min-width:1100px){
+
+    .howToInvestFather{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .calculateYourGain{
+        display: visible;
+    }
+    .calculateYourProfit{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .multiploPerformance{
+        background-color: #f5f5f5;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 50%;
+        box-shadow: 4px 5px 10px #ccc;
+    }
+    .savingPerformance{
+        background-color: #f5f5f5;
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 4px 5px 10px #ccc;
+    }
+    .square{
+        padding: 20px 10px;
+        border-radius: 5px;
+        border-color: linear-gradient(to right, #0caae3 0%,#004889 100%);
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: 4px 5px 10px #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .multiploLogo{
+        width: 9vw;
+    }
+    .savingLogo{
+        width: 2.7vw;
+    }
+
+    .square > ul {
+        width: 100%;
+        padding:0px 20px ;
+    }
+
+    .sahorroTitle{
+        font-size: 1.7rem;
+    }
+
+    .savingTitle{
+        display: flex;
+        align-items: center;
+    }
+    .interes{
+        margin-left: 40px;
+    }
+    .performanceItem{
+        margin:10px 0 ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .amountBoxUp{
+        padding: 5px 20px;
+        width: 7vw;
+        margin-left: 5px;
+       box-shadow: 0px 0px 5px #ccc;
+       border-radius: 30px 30px 0px 0px;
+       text-align: center;
+    }
+    .amountBoxDown{
+        text-align: center;
+        padding: 5px 20px;
+        width: 7vw;
+        margin-left: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .totalBox{
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        padding: 2px 10px;
+        width: 14vw;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+}
