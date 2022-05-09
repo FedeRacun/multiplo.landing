@@ -12,11 +12,12 @@
 .image-separator {
   position: absolute;
   width: 100%;
-  height: calc(18vw);
-  bottom: calc(-5vw);
+  height: 18vw;
+  bottom: -5vw;
   background-image: url('../../../assets/landing/video-separator.svg');
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 10 ;
 }
 
 .btn-container {

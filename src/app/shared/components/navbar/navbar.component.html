@@ -5,16 +5,15 @@
   </a>
 
   <!-- Mobile Menu -->
-  <div class="dot-menu" (click)="onClickMenu(showMenu = !showMenu)">
+  <div class="dot-menu" id="dot-menu" (click)="onClickMenu($event, showMenu = !showMenu)">
     <ul class="sections-container" id="menuMobile">
             <li>Inicio</li>
-            <li>Quienes somos</li>
+            <a href="#aboutUs" style="text-decoration: none;">Quienes somos</a>
             <li>Invierte</li>
             <li>Solicitar financiamiento</li>
             <li>Iniciar Sesion</li>
-            <li class="btn btn-warning">Registrate</li>
+            <li class="bg-color-secondary-300 text-white btn btn-warning">Registrate</li>
         </ul>
-
   </div>
 
   <ul class="navbar-desktop" id="menuDesktop">
@@ -23,7 +22,7 @@
     <li>Invierte</li>
     <li>Solicitar financiamiento</li>
     <li>Iniciar Sesion</li>
-    <li style="background-color: orange; border-radius: 5px;">Registrate</li>
+    <li class="bg-color-secondary-300" style="border-radius: 5px;">Registrate</li>
 </ul>
 
 </nav>

@@ -175,6 +175,11 @@
   width: 67rem;
 }
 
+.background-1 img {
+  position: absolute;
+  top: -23rem;
+}
+
 /* MOBILE RESPONONSIVE */
 @media (max-width: 480px) {
   .title-background {
@@ -205,6 +210,10 @@
   .title-step {
     top: 4vw;
     left: 22vw;
+  }
+  .background-1 img {
+    top: -22rem;
+    left: -113vw;
   }
 }
 
@@ -281,84 +290,3 @@
     max-width: 500px;
   }
 }
-
-/*
-.circle-background {
-    background-image: url('../../../assets/landing/backgroud-top.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -7vw;
-    height: calc(112vw);
-    left: -24px;
-    position: absolute;
-    width: 201%;
-    z-index: -1;
-}
-
-.about-us-container {
-    height: 86vw;
-    overflow: hidden;
-    position: relative;
-    top: -35px;
-    width: 100%;
-}
-
-.title-container {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 10vw;
-    justify-content: flex-end;
-}
-
-.title-about-us {
-    background-image: url('../../../assets/landing/separador1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 61%;
-    position: absolute;
-    height: 7vw;
-    padding-bottom: 1vw;
-}
-
-.title-about-us .title{
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.video-logo-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.video-container {
-    max-width: 900px;
-    width: 90%;
-}
-
-
-@media (min-width: 800px) {
-    .circle-background {
-        height: calc(41vw);
-        bottom: 60vw;
-        left: 176px;
-        position: absolute;
-        width: 121%;
-    }
-}
-
-@media (max-width: 480px) {
-    .title-about-us {
-        width: 75vw;
-        height: 10vw;
-    }
-}
-
-*/
