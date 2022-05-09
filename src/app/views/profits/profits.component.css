@@ -107,5 +107,39 @@
         font-size: 0.9rem;
     }
 
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 700px;position: relative;
+      }
+    
+      .btn-steps-invierte {
+        color: white;
+        background-color: #004889;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 0.3rem 2.5rem;
+        z-index: 10;
+        font-family: 'Gill Sans MT';
+        letter-spacing: 0.1rem;
+      }
+    
+      .btn-steps-invierte:hover {
+        background-color: #223262;
+        cursor: pointer;
+      }
+    
+      .btn-border {
+        background-color: transparent;
+        border: 1px solid #000000;
+        position: absolute;
+        width: 141px;
+        height: 35px;
+        top: 4px;
+        border-radius: 3px;
+        left: calc(50% - 4px);
+        transform: translate(-50%,0);
+      }
 }
 
