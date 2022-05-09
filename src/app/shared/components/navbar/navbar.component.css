@@ -1,9 +1,9 @@
 .hide-menu {
-  display: none;
+  display: none !important;
 }
 
 .show-menu {
-  display: block;
+  display: block !important;
 }
 
 .nav-element {

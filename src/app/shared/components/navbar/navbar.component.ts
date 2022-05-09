@@ -14,15 +14,18 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClickMenu(isMenuOpen: any) {
-    let navbar = document.getElementById('menuMobile')
+  onClickMenu(e:any, isMenuOpen: any) {
 
-    if (isMenuOpen) {
-      navbar?.classList.add('show-menu')
-      navbar?.classList.remove('hide-menu')
-    } else {
-      navbar?.classList.add('hide-menu')
-      navbar?.classList.remove('show-menu')
+    if ( e.target.id === 'dot-menu') {
+      let navbar = document.getElementById('menuMobile')
+
+      if (isMenuOpen) {
+        navbar?.classList.add('show-menu')
+        navbar?.classList.remove('hide-menu')
+      } else {
+        navbar?.classList.add('hide-menu')
+        navbar?.classList.remove('show-menu')
+      }
     }
   }
 
