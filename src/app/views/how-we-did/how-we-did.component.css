@@ -41,6 +41,14 @@
   color: white;
 }
 
+.proposition-image {
+  transition: transform .2s;
+  margin-bottom: 1rem;
+}
+
+.proposition-image:hover {
+  transform: scale(1.2);
+}
 
 /* DESKTOP RESPONONSIVE */
 @media (max-width: 1100px) {

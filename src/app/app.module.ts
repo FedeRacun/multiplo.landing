@@ -9,6 +9,7 @@ import { HowWeDidComponent } from './views/how-we-did/how-we-did.component';
 import { HowToInvestComponent } from './views/how-to-invest/how-to-invest.component';
 import { ProfitsComponent } from './views/profits/profits.component';
 import { FooterComponent } from './views/footer/footer.component';
+import {ContactoComponent} from './views/footer/modal/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './views/footer/footer.component';
     HowToInvestComponent,
     ProfitsComponent,
     FooterComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule
