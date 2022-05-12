@@ -1,4 +1,8 @@
 .about-us-section {
+  position: relative;
+}
+
+.about-us-container {
   padding-top: 6vw;
   overflow: hidden;
 }
@@ -178,6 +182,19 @@
 .background-1 img {
   position: absolute;
   top: -23rem;
+}
+
+.steps-separator {
+  background-image: url('../../../assets/images/separator/orage-bottom-separator.svg');
+  position: absolute;
+  width: 101%;
+  height: 18vw;
+  bottom: -3vw;
+  left: -0.95vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 /* MOBILE RESPONONSIVE */

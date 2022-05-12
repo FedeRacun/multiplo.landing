@@ -10,44 +10,48 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="input-name" class="form-label">Nombre*</label>
+            <label for="input-name" class="form-label" style="font-weight: 600;">Nombre*</label>
             <input type="text" class="form-control" id="input-name" placeholder="Ingrese su nombre completo">
           </div>
           <div class="mb-3">
-            <label for="input-cedula" class="form-label">Cédula o RUC</label>
+            <label for="input-cedula" class="form-label" style="font-weight: 600;">Cédula o RUC</label>
             <input type="text" class="form-control" id="input-cedula" placeholder="Ingrese su cédula o RUC">
           </div>
           <div class="mb-3">
-            <label for="input-email" class="form-label">Email*</label>
+            <label for="input-email" class="form-label" style="font-weight: 600;">Email*</label>
             <input type="email" class="form-control" id="input-email" placeholder="Ingrese su dirección de correo electrónico">
           </div>
           <div class="mb-3">
-            <label for="input-phone" class="form-label">Telefono</label>
+            <label for="input-phone" class="form-label" style="font-weight: 600;">Telefono</label>
             <input type="tel" class="form-control" id="input-phone" placeholder="Ingrese su número de teléfono móvil o fijo">
           </div>
           <div class="mb-3">
-            <label for="input-city" class="form-label">Ciudad</label>
+            <label for="input-city" class="form-label" style="font-weight: 600;">Ciudad</label>
             <input type="text" class="form-control" id="input-city" placeholder="Ingrese la ciudad de donde nos contacta">
           </div>
           <div class="mb-3">
             <label class="form-label col-12">Motivo de contacto:</label>
             <div class="d-flex justify-content-evenly">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                  value="option1">
-                <label class="form-check-label" for="inlineRadio1">Contactame</label>
+                <input class="form-check-input" type="radio" name="motivoDeContacto" id="conctactame"
+                  value="contactame" checked>
+                <label class="form-check-label" for="conctactame">Contactame</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                  value="option2">
-                <label class="form-check-label" for="inlineRadio2">Sugerencias</label>
+                <input class="form-check-input" type="radio" name="motivoDeContacto" id="sugerencias"
+                  value="sugerencias">
+                <label class="form-check-label" for="sugerencias">Sugerencias</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                  value="option2">
-                <label class="form-check-label" for="inlineRadio3">Reclamos</label>
+                <input class="form-check-input" type="radio" name="motivoDeContacto" id="reclamos"
+                  value="reclamos">
+                <label class="form-check-label" for="reclamos">Reclamos</label>
               </div>
             </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 600;">Mensaje*</label>
+            <textarea class="form-control" id="input-textArea" rows="3" placeholder="Ingrese su mensaje"></textarea>
           </div>
         </form>
 
