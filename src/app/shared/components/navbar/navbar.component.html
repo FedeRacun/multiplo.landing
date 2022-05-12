@@ -1,28 +1,44 @@
 <nav class="nav-element">
   <!-- LOGO -->
   <a class="logo-container" href="#">
-    <img src="../../../../assets/images/iconos/logo-multiplo.png" class="logo-img">
+    <img
+      src="../../../../assets/images/iconos/logo-multiplo.png"
+      class="logo-img"
+    />
   </a>
 
   <!-- Mobile Menu -->
-  <div class="dot-menu" id="dot-menu" (click)="onClickMenu($event, showMenu = !showMenu)">
-    <ul class="sections-container" id="menuMobile">
-            <li>Inicio</li>
-            <a href="#aboutUs" style="text-decoration: none;">Quienes somos</a>
-            <li>Invierte</li>
-            <li>Solicitar financiamiento</li>
-            <li>Iniciar Sesion</li>
-            <li class="bg-color-secondary-300 text-white btn btn-warning">Registrate</li>
-        </ul>
+  <div
+    class="dot-menu"
+    id="dot-menu"
+    (click)="onClickMenu($event, (showMenu = !showMenu))"
+  >
+    <div class="sections-container" id="menuMobile">
+      <ul>
+        <li><a href="#inicio" style="color: #223262"> Inicio </a></li>
+        <li><a href="#aboutUs">Quienes somos</a></li>
+        <li><a href="#invest">Invierte</a></li>
+        <li><a href="#solicite">Solicitar financiamiento</a></li>
+        <li><a href="#singIn">Iniciar Sesion</a></li>
+        <li class="bg-color-secondary-300 text-white btn btn-warning fw-bold">
+          Registrate
+        </li>
+      </ul>
+      <img
+        src="../../../../assets/images/iconos/mobile-menu-background.svg"
+        class="navbarIMG"
+      />
+    </div>
   </div>
 
   <ul class="navbar-desktop" id="menuDesktop">
-    <li>Inicio</li>
-    <a href="#aboutUs" style="text-decoration: none; color: white;">Quienes somos</a>
-    <li>Invierte</li>
-    <li>Solicitar financiamiento</li>
-    <li>Iniciar Sesion</li>
-    <li class="bg-color-secondary-300" style="border-radius: 5px;">Registrate</li>
-</ul>
-
+    <li><a href="#inicio"> Inicio </a></li>
+    <li><a href="#aboutUs">Quienes somos</a></li>
+    <li><a href="#invest">Invierte</a></li>
+    <li><a href="#solicite">Solicitar financiamiento</a></li>
+    <li><a href="#singIn">Iniciar Sesion</a></li>
+    <li class="bg-color-secondary-300 btnRegister" style="border-radius: 5px">
+      Registrate
+    </li>
+  </ul>
 </nav>
