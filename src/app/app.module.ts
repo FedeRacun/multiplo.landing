@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
@@ -28,6 +29,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     NgCircleProgressModule.forRoot({
       radius: 100,
       outerStrokeWidth: 16,

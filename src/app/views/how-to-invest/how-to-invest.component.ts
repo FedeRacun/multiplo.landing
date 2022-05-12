@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProyectosService } from 'src/app/shared/services/proyectos.service';
 
 @Component({
   selector: 'app-how-to-invest',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HowToInvestComponent implements OnInit {
 
-  constructor() { }
+  constructor(private proyectService: ProyectosService) { }
 
   ngOnInit(): void {
+    this.proyectService.getProjects().subscribe(res => console.log(res))
   }
 
 }
