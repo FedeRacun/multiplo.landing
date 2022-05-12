@@ -42,11 +42,11 @@
 }
 
 .proposition-image {
-  transition: transform .2s;
   margin-bottom: 1rem;
 }
 
 .proposition-image:hover {
+  transition: transform .4s;
   transform: scale(1.2);
 }
 
