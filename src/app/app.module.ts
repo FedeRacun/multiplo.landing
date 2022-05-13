@@ -14,6 +14,8 @@ import {ContactoComponent} from './views/footer/modal/contacto/contacto.componen
 
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChoiseOportunityComponent } from './views/choise-oportunity/choise-oportunity.component';
+import { SimulatorComponent } from './views/simulator/simulator.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     HowToInvestComponent,
     ProfitsComponent,
     FooterComponent,
-    ContactoComponent
+    ContactoComponent,
+    ChoiseOportunityComponent,
+    SimulatorComponent
   ],
   imports: [
     BrowserModule,

@@ -8,10 +8,12 @@ import { ProyectosService } from 'src/app/shared/services/proyectos.service';
 })
 export class HowToInvestComponent implements OnInit {
 
-  constructor(private proyectService: ProyectosService) { }
+  public projects: any;
+
+  constructor(public proyectService: ProyectosService) { }
 
   ngOnInit(): void {
-    this.proyectService.getProjects().subscribe(res => console.log(res))
+     this.proyectService.getProjects().subscribe((res:any) => this.projects = res);
   }
 
 }

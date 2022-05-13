@@ -109,11 +109,6 @@
   max-width: 40px;
 }
 
-.email {
-  font-size: 16px;
-}
-
-
 /* Responsive Mobile */
 @media (max-width: 480px) {
 

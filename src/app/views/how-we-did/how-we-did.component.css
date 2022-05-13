@@ -7,9 +7,9 @@
 
 .title-background {
   width: 70%;
-  max-width: 800px;
+  max-width: 1000px;
   min-height: 48px;
-  max-height: 113px;
+  max-height: 140px;
   position: absolute;
   right: 0;
 }
@@ -17,9 +17,9 @@
 .title {
   position: absolute;
   width: 60%;
-  max-width: 600px;
+  max-width: 707px;
   right: 0;
-  top: 0;
+  top: 0.5vw;
 }
 
 .title h4 {
@@ -30,9 +30,9 @@
 .subtitle {
   position: absolute;
   width: 62%;
-  max-width: 600px;
+  max-width: 757px;
   right: 0;
-  top: 55px
+  top: 66px;
 }
 
 .subtitle span {
@@ -90,8 +90,8 @@
   background-image: url('../../../assets/images/separator/blue-diagonal-separator.svg');
   position: absolute;
   width: 101%;
-  height: 18vw;
-  bottom: -7vw;
+  height: 20vw;
+  bottom: -8vw;
   left: -0.95vw;
   background-repeat: no-repeat;
   background-position: center;
