@@ -6,7 +6,6 @@
   padding-top: 6vw;
   overflow: hidden;
 }
-
 .title-container {
   position: relative;
   min-height: 14vw;
@@ -26,6 +25,7 @@
   top: 1.2vw;
   right: 10vw;
 }
+
 
 /* VIDEO */
 .video-logo-container {
@@ -57,14 +57,6 @@
   width: 80%;
   max-width: 800px;
   min-height: 130px;
-}
-
-.title-2 {
-  position: absolute;
-  left: 0;
-  top: 3rem;
-  color: white;
-  font-size: 3rem;
 }
 
 .span-container-title-2 {
@@ -188,8 +180,8 @@
   background-image: url('../../../assets/images/separator/orage-bottom-separator.svg');
   position: absolute;
   width: 101%;
-  height: 18vw;
-  bottom: -3vw;
+  height: 22vw;
+  bottom: -4vw;
   left: -0.95vw;
   background-repeat: no-repeat;
   background-position: center;
