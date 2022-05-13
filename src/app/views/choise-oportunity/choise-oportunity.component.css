@@ -1,0 +1,61 @@
+.title-container {
+  position: relative;
+  min-height: 14vw;
+  top: 8vw;
+  z-index: 3;
+}
+
+.title-background {
+  width: 66%;
+  max-width: 800px;
+  min-height: 69px;
+  position: absolute;
+  right: -3px;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  top: 1.2vw;
+  right: 10vw;
+}
+
+
+
+/* Resolucion desktop */
+@media (max-width: 1100px) {
+  .title-container {
+    min-height: 10vw;
+    top: 5vw;
+  }
+
+  .title-background {
+    min-width: 60vw;
+  }
+
+  .title {
+    top: 0.5vw;
+    right: 15vw;
+    font-size: 3vw;
+  }
+}
+
+
+/* Resolucion Mobile */
+@media (max-width: 480px) {
+
+  .title-background {
+    min-height: 30px;
+  }
+
+  .title {
+    right: 3vw;
+    font-size: 4vw;
+  }
+
+  .profit-list {
+    width: 70%;
+    min-width: auto;
+    left: 50%;
+  }
+}
