@@ -20,7 +20,157 @@
   right: 10vw;
 }
 
+.card-design {
+  width: 100%;
+}
 
+.sector-l {
+  position: absolute;
+  top: 34%;
+  left: 57%;
+  transform: translate(-50%, -65%);
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.sector-r {
+  position: absolute;
+  top: 34%;
+  left: 57%;
+  transform: translate(-50%, -65%);
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* EMPRESA */
+.empresa-l {
+  position: absolute;
+  top: 41%;
+  left: 57%;
+  transform: translate(-50%, -65%);
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.empresa-r {
+  position: absolute;
+  top: 41%;
+  left: 57%;
+  transform: translate(-50%, -65%);
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* MONTO */
+.monto-l {
+  position: absolute;
+  top: 47.5%;
+  left: 57%;
+  transform: translate(-50%, -65%);
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.monto-r {
+  position: absolute;
+  top: 47.5%;
+  left: 57%;
+  transform: translate(-50%, -65%);
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* DESTINO */
+.destino-l {
+  position: absolute;
+  top: 57.5%;
+  left: 42%;
+  transform: translate(-50%, -65%);
+  width: 46%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.destino-r {
+  position: absolute;
+  top: 57.5%;
+  left: 37%;
+  transform: translate(-50%, -65%);
+  width: 39%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* PLAZO */
+.plazos-l {
+  position: absolute;
+  top: 41%;
+  left: 69%;
+  transform: translate(-50%, -65%);
+  width: 6%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.plazos-r {
+  position: absolute;
+  top: 41%;
+  left: 69%;
+  transform: translate(-50%, -65%);
+  width: 6%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* TASA */
+.tasa-l {
+  position: absolute;
+  top: 48.5%;
+  left: 69%;
+  transform: translate(-50%, -65%);
+  width: 6%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.tasa-r {
+  position: absolute;
+  top: 48.5%;
+  left: 69%;
+  transform: translate(-50%, -65%);
+  width: 6%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* FRECUENCIA */
+.frecuencia-l {
+  position: absolute;
+  top: 55.5%;
+  left: 69%;
+  transform: translate(-50%, -65%);
+  width: 6%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.frecuencia-r {
+  position: absolute;
+  top: 55.5%;
+  left: 69%;
+  transform: translate(-50%, -65%);
+  width: 6%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.circle-progress {
+  position: absolute;
+  top: 74.5%;
+  left: 42%;
+  transform: translate(-50%, -65%);
+  width: 46%;
+}
 
 /* Resolucion desktop */
 @media (max-width: 1100px) {
@@ -57,5 +207,9 @@
     width: 70%;
     min-width: auto;
     left: 50%;
+  }
+
+  .text-project {
+    font-size: 2.5vw;
   }
 }

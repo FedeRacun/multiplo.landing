@@ -7,5 +7,89 @@
   </div>
 
 
+  <div class=" mt-5">
+    <div class="d-flex justify-content-center flex-wrap">
+
+      <div class="m-4 " style="position: relative;">
+        <img src="../../../assets/images/cards/card-left.png" class="card-design">
+        <div style="    left: 50%;
+        transform: translate(-50%,0);
+        position: absolute;
+        top: 2rem;
+        width: 66%;
+        border-radius: 5%;">
+          <img [src]="projects[0].proyectoRutas[0].ruta" alt="" style="width: 100%; border-radius: 10px;" loading="lazy">
+        </div>
+
+        <span class="sector-l text-project">{{projects[0].empresa.actividad.nombre}}</span>
+        <br>
+        <span class="empresa-l text-project">{{projects[0].empresa.pais.pais}}</span>
+        <br>
+        <span class="monto-l text-project">{{projects[0].montoSolicitado}}</span>
+        <br>
+        <span class="destino-l text-project">{{projects[0].destinoFinanciamiento}}</span>
+        <br>
+        <span class="plazos-l text-project">{{projects[0].plazo}}</span>
+        <br>
+        <span class="tasa-l text-project">{{projects[0].tasaEfectivaAnual}}</span>
+        <br>
+        <span class="frecuencia-l text-project">{{projects[0].pagoInteres}}</span>
+
+        <circle-progress
+        class="circle-progress"
+        [percent]="projects[0].avanceInversion.porcentaje"
+        [radius]="40"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [title]="projects[0].avanceInversion.porcentaje"
+        [animationDuration]="300"
+        titleFontWeight="700"
+      ></circle-progress>
+
+      </div>
+
+      <div class="m-4 " style="position: relative;">
+        <img src="../../../assets/images/cards/card-rigth.png" class="card-design">
+        <div style="    left: 50%;
+        transform: translate(-50%,0);
+        position: absolute;
+        top: 2rem;
+        width: 66%;
+        border-radius: 5%;">
+          <img [src]="projects[1].proyectoRutas[0].ruta" alt="" style="width: 100%; border-radius: 10px;" loading="lazy">
+        </div>
+
+        <span class="sector-r">{{projects[1].empresa.actividad.nombre}}</span>
+        <br>
+        <span class="empresa-r">{{projects[1].empresa.pais.pais}}</span>
+        <br>
+        <span class="monto-r">{{projects[1].montoSolicitado}}</span>
+        <br>
+        <span class="destino-r">{{projects[1].destinoFinanciamiento}}</span>
+        <br>
+        <span class="plazos-r">{{projects[1].plazo}}</span>
+        <br>
+        <span class="tasa-r">{{projects[1].tasaEfectivaAnual}}</span>
+        <br>
+        <span class="frecuencia-r">{{projects[1].pagoInteres}}</span>
+
+        <circle-progress
+        class="circle-progress"
+        [percent]="projects[1].avanceInversion.porcentaje"
+        [radius]="40"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [title]="projects[1].avanceInversion.porcentaje"
+        [animationDuration]="300"
+        titleFontWeight="700"
+      ></circle-progress>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
 
 </section>
