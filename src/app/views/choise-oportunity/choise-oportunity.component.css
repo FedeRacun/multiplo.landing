@@ -26,20 +26,20 @@
 
 .sector-l {
   position: absolute;
-  top: 34%;
-  left: 57%;
+  top: 42%;
+  left: 42%;
   transform: translate(-50%, -65%);
-  width: 75%;
+  width: 46%;
   font-size: 0.8rem;
   font-weight: 600;
 }
 
 .sector-r {
   position: absolute;
-  top: 34%;
-  left: 57%;
+  top: 41%;
+  left: 48%;
   transform: translate(-50%, -65%);
-  width: 75%;
+  width: 57%;
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -47,7 +47,7 @@
 /* EMPRESA */
 .empresa-l {
   position: absolute;
-  top: 41%;
+  top: 49%;
   left: 57%;
   transform: translate(-50%, -65%);
   width: 75%;
@@ -56,7 +56,7 @@
 }
 .empresa-r {
   position: absolute;
-  top: 41%;
+  top: 48%;
   left: 57%;
   transform: translate(-50%, -65%);
   width: 75%;
@@ -67,7 +67,7 @@
 /* MONTO */
 .monto-l {
   position: absolute;
-  top: 47.5%;
+  top: 56.5%;
   left: 57%;
   transform: translate(-50%, -65%);
   width: 75%;
@@ -76,7 +76,7 @@
 }
 .monto-r {
   position: absolute;
-  top: 47.5%;
+  top: 55.5%;
   left: 57%;
   transform: translate(-50%, -65%);
   width: 75%;
@@ -87,7 +87,7 @@
 /* DESTINO */
 .destino-l {
   position: absolute;
-  top: 57.5%;
+  top: 68.5%;
   left: 42%;
   transform: translate(-50%, -65%);
   width: 46%;
@@ -96,7 +96,7 @@
 }
 .destino-r {
   position: absolute;
-  top: 57.5%;
+  top: 67.5%;
   left: 37%;
   transform: translate(-50%, -65%);
   width: 39%;
@@ -107,7 +107,7 @@
 /* PLAZO */
 .plazos-l {
   position: absolute;
-  top: 41%;
+  top: 48%;
   left: 69%;
   transform: translate(-50%, -65%);
   width: 6%;
@@ -116,7 +116,7 @@
 }
 .plazos-r {
   position: absolute;
-  top: 41%;
+  top: 48%;
   left: 69%;
   transform: translate(-50%, -65%);
   width: 6%;
@@ -127,8 +127,8 @@
 /* TASA */
 .tasa-l {
   position: absolute;
-  top: 48.5%;
-  left: 69%;
+  top: 55.7%;
+  left: 76%;
   transform: translate(-50%, -65%);
   width: 6%;
   font-size: 0.8rem;
@@ -136,8 +136,8 @@
 }
 .tasa-r {
   position: absolute;
-  top: 48.5%;
-  left: 69%;
+  top: 55.2%;
+  left: 77%;
   transform: translate(-50%, -65%);
   width: 6%;
   font-size: 0.8rem;
@@ -147,7 +147,7 @@
 /* FRECUENCIA */
 .frecuencia-l {
   position: absolute;
-  top: 55.5%;
+  top: 66.5%;
   left: 69%;
   transform: translate(-50%, -65%);
   width: 6%;
@@ -156,7 +156,7 @@
 }
 .frecuencia-r {
   position: absolute;
-  top: 55.5%;
+  top: 65.5%;
   left: 69%;
   transform: translate(-50%, -65%);
   width: 6%;
@@ -166,7 +166,7 @@
 
 .circle-progress {
   position: absolute;
-  top: 74.5%;
+  top: 86.5%;
   left: 42%;
   transform: translate(-50%, -65%);
   width: 46%;
