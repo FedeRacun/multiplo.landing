@@ -59,14 +59,6 @@
   min-height: 130px;
 }
 
-.title-2 {
-  position: absolute;
-  left: 0;
-  top: 3rem;
-  color: white;
-  font-size: 3rem;
-}
-
 .span-container-title-2 {
   position: absolute;
   color: white;
@@ -189,7 +181,7 @@
   position: absolute;
   width: 101%;
   height: 22vw;
-  bottom: -3vw;
+  bottom: -4vw;
   left: -0.95vw;
   background-repeat: no-repeat;
   background-position: center;

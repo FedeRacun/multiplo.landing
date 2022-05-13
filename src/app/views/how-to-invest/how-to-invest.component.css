@@ -1,206 +1,102 @@
-.howToInvestFather{
-    width: 100vw;
-}
-@media (max-width:480px){
-    .calculateYourProfit{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-    .multiploPerformance{
-        background-color: #f5f5f5;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        width: 50%;
-        box-shadow: 4px 5px 10px #ccc;
-    }
-    .savingPerformance{
-        background-color: #f5f5f5;
-        width: 50%;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 4px 5px 10px #ccc;
-    }
-    .square{
-        padding: 20px 10px;
-        border-radius: 5px;
-        border-color: linear-gradient(to right, #0caae3 0%,#004889 100%);
-        border-width: 1px;
-        border-style: solid;
-        box-shadow: 4px 5px 10px #ccc;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .multiploLogo{
-        width: 15vw;
-    }
-    .savingLogo{
-        width: 5vw;
-    }
-
-    .savingTitle{
-        display: flex;
-        align-items: center;
-    }
-
-    .performanceItem{
-        margin:10px 0 ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        font-size: 0.4rem;
-        font-weight: 700;
-    }
-
-    .amountBoxUp{
-        padding: 5px 20px;
-        width: 13vw;
-        margin-left: 5px;
-       box-shadow: 0px 0px 5px #ccc;
-       border-radius: 15px 15px 0px 0px;
-       text-align: center;
-    }
-    .amountBoxDown{
-        text-align: center;
-        padding: 5px 20px;
-        width: 13vw;
-        margin-left: 5px;
-        box-shadow: 0px 0px 5px #ccc;
-        border-radius: 0px 0px 15px 15px;
-    }
-
-    .totalBox{
-        font-size: 0.7rem;
-        padding: 2px 10px;
-        width: 25vw;
-        text-align: center;
-        color: #fff;
-        border-radius: 5px;
-        font-weight: 700;
-    }
-
-    .calculateYourGain{
-        display: none;
-    }
-
-    .interes{
-        margin-left: 20px;
-    }
+.title-container {
+  margin-top: 10vw;
+  position: relative;
 
 }
-@media (min-width:1100px){
 
-    .howToInvestFather{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
+.title-background {
+  width: 80%;
+  max-width: 800px;
+}
 
-    .calculateYourGain{
-        display: visible;
-    }
-    .calculateYourProfit{
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-    .multiploPerformance{
-        background-color: #f5f5f5;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        width: 50%;
-        box-shadow: 4px 5px 10px #ccc;
-    }
-    .savingPerformance{
-        background-color: #f5f5f5;
-        width: 50%;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 4px 5px 10px #ccc;
-    }
-    .square{
-        padding: 20px 10px;
-        border-radius: 5px;
-        border-color: linear-gradient(to right, #0caae3 0%,#004889 100%);
-        border-width: 1px;
-        border-style: solid;
-        box-shadow: 4px 5px 10px #ccc;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.title {
+  color: #E06222;
+}
 
-    .multiploLogo{
-        width: 9vw;
-    }
-    .savingLogo{
-        width: 2.7vw;
-    }
+.span-container-title {
+  position: absolute;
+  min-width: 186px;
+  top: calc(1rem + 1vw);
+  left: 0;
+  font-size: 3.2vw;
+  width: 63%;
+  max-width: 1000px;
+  font-weight: 700;
+  text-align: end;
+}
 
-    .square > ul {
-        width: 100%;
-        padding:0px 20px ;
-    }
+.img-carrousel {
+  width: 40%;
+}
 
-    .sahorroTitle{
-        font-size: 1.7rem;
-    }
+.carousel-indicators {
+  margin-left: 22%;
+}
 
-    .savingTitle{
-        display: flex;
-        align-items: center;
-    }
-    .interes{
-        margin-left: 40px;
-    }
-    .performanceItem{
-        margin:10px 0 ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        font-size: 0.8rem;
-        font-weight: 700;
-    }
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 100%;
+  width: 0;
+  height: 0;
+}
 
-    .amountBoxUp{
-        padding: 5px 20px;
-        width: 7vw;
-        margin-left: 5px;
-       box-shadow: 0px 0px 5px #ccc;
-       border-radius: 30px 30px 0px 0px;
-       text-align: center;
-    }
-    .amountBoxDown{
-        text-align: center;
-        padding: 5px 20px;
-        width: 7vw;
-        margin-left: 5px;
-        box-shadow: 0px 0px 5px #ccc;
-        border-radius: 0px 0px 30px 30px;
-    }
+.carrousel-separator {
+  background-image: url('../../../assets/images/separator/orange-top-separator.svg');
+  position: absolute;
+  width: 101%;
+  height: 22vw;
+  bottom: -18vw;
+  left: -0.95vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
 
-    .totalBox{
-        letter-spacing: 2px;
-        font-size: 1.2rem;
-        padding: 2px 10px;
-        width: 14vw;
-        text-align: center;
-        color: #fff;
-        border-radius: 5px;
-        font-weight: 700;
-    }
+/* MOBILE RESPONONSIVE */
+@media (max-width: 480px) {
+
+  .span-container-title {
+    font-size: 12px;
+    top: calc(0.6rem + 0.3vw);
+  }
+
+  .img-carrousel {
+    width: 70%;
+  }
+
+  .carousel-indicators {
+    bottom: -30px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    padding: 0.2rem;
+  }
+}
+
+
+
+/* DESKTOP RESPONONSIVE */
+@media (min-width: 1100px) {
+
+  .title-container {
+    min-height: 10vw;
+  }
+
+  .title-background {
+    min-height: 15vw;
+    max-width: 1270px;
+  }
+
+  .span-container-title {
+    top: 6vw;
+    left: 0;
+    font-size: 3.2vw;
+    width: 63%;
+    max-width: 1000px;
+    font-weight: 700;
+    text-align: end;
+  }
 
 }
