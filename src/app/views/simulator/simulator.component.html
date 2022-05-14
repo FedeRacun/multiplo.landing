@@ -1,1 +1,157 @@
-<p>simulator works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div name="simulador" id="simulador" class="flex flex-col justify-items-center content-center items-center mb-5">
+        <p class="bg-[#124278] rounded-b-full sm:w-3/4 w-full p-5 text-center text-2xl font-bold text-white">
+          ¡Calcula tu <span class="text-[#F2A348]">GANANCIA!</span>
+        </p>
+
+        <div class="grid place-items-center sm:w-3/4">
+          <span class="font-bold text-[#F2A348]">{{ mensaje_err }}</span>
+          <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 sm:w-3/4 flex flex-col place-items-center">
+            <span
+              class="font-bold letra-azul md:w-full lg:w-full xl:w-full 2xl:w-full md:p-5 lg:p-5 xl:p-5 2xl:p-5 text-2xl">Monto
+              a invertir</span>
+            <div class="relative flex place-items-center item2">
+              <div
+                class="md:absolute lg:absolute xl:absolute 2xl:absolute md:right lg:right xl:right 2xl:right number-input2">
+                <input [(ngModel)]="inversion" [step]="salto_inv" [max]="maximo_inv" [min]="minimo_inv"
+                  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
+                  class="rounded-full text-white font-bold text-center currency" currencyMask
+                  (ngModelChange)="interes_m2()" />
+              </div>
+            </div>
+          </div>
+
+          <div class="grid place-items-center sm:w-3/4 sm:py-4 progress_mobile">
+            <input type="range" [min]="minimo_inv" [max]="maximo_inv" [value]="inversion" [(ngModel)]="inversion"
+              class="slider_monto input2" [step]="salto_inv" (change)="interes_m()" list="lst_inversion" />
+            <datalist class="list" id="lst_inversion">
+              <option value="500 to 100000">$500</option>
+              <option value="500 to 100000">$20,000</option>
+              <option value="500 to 100000">$40,000</option>
+              <option value="500 to 100000">$60,000</option>
+              <option value="500 to 100000">$80,000</option>
+              <option>$100,000</option>
+            </datalist>
+          </div>
+        </div>
+        <div class="grid place-items-center sm:w-3/4 my-5">
+          <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 sm:w-3/4 flex flex-col place-items-center">
+            <span
+              class="font-bold letra-azul md:w-full lg:w-full xl:w-full 2xl:w-full md:p-5 lg:p-5 xl:p-5 2xl:p-5 text-2xl">Plazos</span>
+            <div class="relative flex place-items-center">
+              <div class="md:absolute lg:absolute xl:absolute 2xl:absolute md:right lg:right xl:right 2xl:right">
+                <div class="number-input">
+                  <button (click)="handleMinus()" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+                      </svg>
+                  </button>
+                  <input min="0" value="1" type="number" [disabled]="true" [(ngModel)]="valor" [step]="salto"
+                    [max]="maximo" [min]="minimo" (change)="interes_m()" />
+
+                  <button (click)="handlePlus()" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+                      </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid place-items-center sm:w-3/4 progress_mobile">
+            <input type="range" [min]="minimo" [max]="maximo" [value]="valor" [(ngModel)]="valor"
+              class="slider_tiempo input3" [step]="salto" list="lst_plazo" (change)="interes_m()" />
+            <datalist class="list" id="lst_plazo">
+              <option value="6 to 24">6</option>
+              <option>12</option>
+              <option>18</option>
+              <option>24</option>
+            </datalist>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid md:grid-cols-2 flex flex-col-reverse divide-y divide-y-reverse">
+            <div class="grid place-items-center text-center" style="border-right: solid #efefef">
+              <img class="" src="/assets/images/logo.png" alt="" style="width: 100%;"/>
+              <div class="grid place-items-center text-center"
+                style="padding-left: 1%; border-top: solid #efefef; width: 90%">
+                <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 sm:w-3/4 flex flex-col py-6">
+                  <span class="texto_inversion">Rendimiento anual promedio</span>
+                  <div class="relative md:flex lg:flex xl:flex 2xl:flex place-items-center text-center">
+                    <div
+                      class="md:absolute lg:absolute xl:absolute 2xl:absolute md:right lg:right xl:right 2xl:right sm:text-center number-input3">
+                      <input type="text" [disabled]="true" [(ngModel)]="m_porcentaje_rendimiento"
+                        class="rounded-full text-center font-bold input_simulador" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 sm:w-3/4 flex flex-col">
+                  <span class="texto_inversion">Interés ganado</span>
+                  <div class="relative md:flex lg:flex xl:flex 2xl:flex place-items-center">
+                    <div
+                      class="md:absolute lg:absolute xl:absolute 2xl:absolute md:right lg:right xl:right 2xl:right sm:text-center number-input3">
+                      <input currencyMask [disabled]="true" [(ngModel)]="m_rendimiento_a"
+                        class="rounded-full text-center font-bold input_simulador" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-2 md:grid-cols-1 sm:grid-cols-1 py-6 my-4">
+                <span
+                  class="cursor-pointer font-bold w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#124278] hover:bg-[#124278] md:py-2 md:text-lg md:px-8">Total
+                  ${{ total_m | number: "3.2-2" }}</span>
+              </div>
+            </div>
+
+            <div class="grid place-items-center text-center">
+              <span class="font-bold letra-azul w-full p-5 text-2xl">Ahorro tradicional</span>
+              <div class="grid place-items-center text-center"
+                style="padding-left: 3%; border-top: solid #efefef; width: 90%">
+                <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 sm:w-3/4 flex flex-col py-6">
+                  <span class="texto_inversion">Rendimiento anual promedio</span>
+                  <div class="relative md:flex lg:flex xl:flex 2xl:flex place-items-center">
+                    <div
+                      class="md:absolute lg:absolute xl:absolute 2xl:absolute md:right lg:right xl:right 2xl:right sm:text-center number-input3">
+                      <input type="text" [disabled]="true" [(ngModel)]="bnco_porcentaje_rendimiento"
+                        class="rounded-full text-center font-bold input_simulador" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-2 sm:grid-cols-1 sm:w-3/4 flex flex-col">
+                  <span class="texto_inversion">Interés ganado</span>
+                  <div class="relative md:flex lg:flex xl:flex 2xl:flex place-items-center">
+                    <div
+                      class="md:absolute lg:absolute xl:absolute 2xl:absolute md:right lg:right xl:right 2xl:right sm:text-center number-input3">
+                      <input currencyMask [disabled]="true" [(ngModel)]="inversion_bco"
+                        class="rounded-full text-center font-bold input_simulador" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-2 md:grid-cols-1 sm:grid-cols-1 py-6 my-4">
+                <span
+                  class="cursor-pointer font-bold w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#F2A348] hover:bg-[#F2A348] md:py-2 md:text-lg md:px-8">Total
+                  ${{ total_bco | number: "3.2-2" }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid justify-items-center">
+          <div class="rounded-md shadow my-4">
+            <button
+              class="cursor-pointer font-bold w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#E33823] hover:bg-[#E33823] md:py-2 md:text-lg md:px-8">
+              ¡INVIERTE HOY!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

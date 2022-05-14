@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
@@ -34,13 +35,24 @@ import { SimulatorComponent } from './views/simulator/simulator.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({
-      radius: 100,
-      outerStrokeWidth: 16,
-      innerStrokeWidth: 8,
-      outerStrokeColor: "#78C000",
-      innerStrokeColor: "#C7E596",
-      animationDuration: 300,
+      radius: 60,
+      space: -10,
+      outerStrokeGradient: true,
+      outerStrokeWidth: 10,
+      outerStrokeColor: "#3176BA",
+      outerStrokeGradientStopColor: "#004889",
+      innerStrokeColor: "transparent",
+      innerStrokeWidth: 10,
+      animateTitle: false,
+      animationDuration: 1000,
+      showUnits: true,
+      showBackground: false,
+      clockwise: false,
+      startFromZero: false,
+      showSubtitle: false,
+      lazy: false
     }),
   ],
   providers: [],
