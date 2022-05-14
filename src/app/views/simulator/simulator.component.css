@@ -1,0 +1,495 @@
+[nz-carousel-content] {
+  background: #fff;
+  color: #fff;
+  overflow: hidden;
+}
+
+.crs-banner {
+  height: 45vw;
+  padding-top: 6%;
+}
+
+.how-banner {
+  height: 40vw;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.letra-azul {
+  color: #124278;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider_tiempo {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d1d1d1;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 25px;
+}
+
+.slider_tiempo:hover {
+  opacity: 1;
+}
+
+.slider_tiempo::-webkit-slider_tiempo-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider_tiempo::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  background-repeat: no-repeat;
+  border: transparent;
+  background-image: url("/assets/images/iconos/reloj-de-arena.png");
+  background-size: cover;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.slider_tiempo::-moz-range-progress {
+  background: rgb(0, 168, 230);
+  background: linear-gradient(90deg,
+      rgba(0, 168, 230, 1) 0%,
+      rgba(0, 107, 168, 1) 36%,
+      rgba(32, 56, 117, 1) 100%);
+  width: 100%;
+  height: 15px;
+
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 25px;
+}
+
+.slider_tiempo::-ms-fill-lower {
+  background: rgb(0, 168, 230);
+  width: 100%;
+  height: 15px;
+
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 25px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+  -webkit-appearance: none;
+  width: 96.5%;
+  font-weight: bold;
+  margin-right: -6px;
+  margin-top: -10px;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-color: #124278;
+  color: white;
+  font-size: smaller;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  background-color: #124278;
+  display: inline-flex;
+  border-radius: 25px;
+  height: 35px;
+  width: 10rem;
+}
+
+.number-input2 {
+  background-color: #124278;
+  display: inline-flex;
+  border-radius: 25px;
+  height: 35px;
+}
+
+.number-input button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  color: white;
+  height: auto;
+}
+
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.number-input input[type="number"] {
+  font-family: sans-serif;
+  max-width: 5rem;
+  padding: 0.5rem;
+  border: solid #124278;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.number-input2 button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  color: white;
+  height: auto;
+}
+
+.number-input2 button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  color: white;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.number-input2 button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.number-input2 input[type="number"] {
+  font-family: sans-serif;
+  max-width: 10.5rem;
+  padding: 0.5rem;
+  border: solid #124278;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.number-input3 {
+  background-color: white;
+  display: inline-flex;
+  border-radius: 25px;
+  height: 35px;
+}
+
+.number-input3 button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+
+  width: 2.8rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  color: white;
+  height: auto;
+}
+
+.number-input3 button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  color: white;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.number-input3 button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.number-input3 input[type="number"] {
+  font-family: sans-serif;
+  max-width: 7rem;
+  padding: 0.5rem;
+  border: solid #124278;
+  background-color: white;
+  color: #124278;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.input_simulador {
+  font-family: sans-serif;
+  max-width: 7rem;
+  padding: 0.5rem;
+  border: solid #124278;
+  background-color: white;
+  color: #124278;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.texto_inversion {
+  text-align: initial;
+}
+
+.slider_monto:hover {
+  opacity: 1;
+}
+
+.slider_monto::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  background-repeat: no-repeat;
+  border: transparent;
+  background-image: url("/assets/images/iconos/moneda.png");
+  background-size: cover;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.slider_monto::-moz-range-progress {
+  -webkit-appearance: none;
+  background: rgb(242, 163, 72);
+  background: linear-gradient(90deg,
+      rgba(242, 163, 72, 1) 0%,
+      rgba(224, 98, 34, 1) 35%,
+      rgba(227, 56, 35, 1) 100%);
+  width: 100%;
+  height: 15px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 25px;
+}
+
+/* ************************************* */
+
+
+.input2 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 30px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.input2:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.input2::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg,
+      rgba(242, 163, 72, 1) 0%,
+      rgba(224, 98, 34, 1) 35%,
+      rgba(227, 56, 35, 1) 100%);
+  content: "";
+  height: 15px;
+  pointer-events: none;
+}
+
+.input2::-webkit-slider-thumb {
+  height: 35px;
+  width: 35px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: transparent;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  background-image: url("/assets/images/iconos/moneda.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.input2::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  background: #d1d1d1;
+  border: none;
+  border-radius: 25px;
+}
+
+/* ******************* Slider tiempo ****************** */
+.input3 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 30px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.input3:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.input3::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg,
+      rgba(0, 168, 230, 1) 0%,
+      rgba(0, 107, 168, 1) 36%,
+      rgba(32, 56, 117, 1) 100%);
+  content: "";
+  height: 15px;
+  pointer-events: none;
+}
+
+.input3::-webkit-slider-thumb {
+  height: 35px;
+  width: 35px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: transparent;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  background-image: url("/assets/images/iconos/reloj-de-arena.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.input3::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  background: #d1d1d1;
+  border: none;
+  border-radius: 25px;
+}
+
+.currency {
+  background-color: #124278;
+  border: medium none transparent;
+  width: 10rem;
+}
+
+@media screen and (max-width: 480px) {
+  .progress_mobile {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  /*nz-content{
+      padding-top: 60%;
+    }*/
+}
+
+/* ######################################### */
+
+option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+option::before {
+  align-self: center;
+  width: 4px;
+  height: 0.5rem;
+  box-shadow: inset -1px 0 1px #124278;
+  background: #124278;
+  content: "";
+}
+
+.jss10 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 195px);
+  position: relative;
+  min-height: 575px;
+  object-fit: cover;
+  align-items: flex-end;
+}
+
+.jss12 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 195px);
+  display: flex;
+  position: absolute;
+  min-height: 576px;
+  object-fit: cover;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.jss13 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 195px);
+  display: flex;
+  position: absolute;
+  min-height: 644px;
+  object-fit: cover;
+  align-items: flex-end;
+}
